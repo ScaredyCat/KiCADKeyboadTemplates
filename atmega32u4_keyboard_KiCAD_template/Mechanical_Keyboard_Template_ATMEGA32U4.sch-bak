@@ -1,0 +1,720 @@
+EESchema Schematic File Version 5
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-MU U?
+U 1 1 5D715533
+P 10358 3070
+F 0 "U?" H 10358 1184 50  0000 C CNN
+F 1 "ATmega32U4-MU" H 10358 1093 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.2x5.2mm" H 10358 3070 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 10358 3070 50  0001 C CNN
+	1    10358 3070
+	1    0    0    -1  
+$EndComp
+Text GLabel 9758 1570 0    50   Input ~ 0
+RESET
+Text GLabel 1612 1488 0    50   Input ~ 0
+RESET
+$Comp
+L Device:R_Small R?
+U 1 1 5D716BE2
+P 1861 1388
+F 0 "R?" H 1920 1434 50  0000 L CNN
+F 1 "10k" H 1920 1343 50  0000 L CNN
+F 2 "" H 1861 1388 50  0001 C CNN
+F 3 "~" H 1861 1388 50  0001 C CNN
+	1    1861 1388
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1861 1488 1612 1488
+$Comp
+L power:+5V #PWR?
+U 1 1 5D716592
+P 1861 1186
+F 0 "#PWR?" H 1861 1036 50  0001 C CNN
+F 1 "+5V" H 1875 1358 50  0000 C CNN
+F 2 "" H 1861 1186 50  0001 C CNN
+F 3 "" H 1861 1186 50  0001 C CNN
+	1    1861 1186
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1861 1186 1861 1288
+Wire Wire Line
+	1861 1289 1861 1291
+Wire Wire Line
+	1861 1291 1861 1293
+Connection ~ 1861 1289
+Connection ~ 1861 1288
+Wire Wire Line
+	1861 1288 1861 1289
+Connection ~ 1861 1291
+Connection ~ 1861 1293
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5D7189E9
+P 2347 1488
+F 0 "SW?" H 2347 1771 50  0000 C CNN
+F 1 "SW_Push" H 2347 1680 50  0000 C CNN
+F 2 "" H 2347 1688 50  0001 C CNN
+F 3 "~" H 2347 1688 50  0001 C CNN
+	1    2347 1488
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D71CB8C
+P 2547 1488
+F 0 "#PWR?" H 2547 1238 50  0001 C CNN
+F 1 "GND" H 2551 1317 50  0000 C CNN
+F 2 "" H 2547 1488 50  0001 C CNN
+F 3 "" H 2547 1488 50  0001 C CNN
+	1    2547 1488
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2148 1488 2147 1488
+Wire Wire Line
+	1861 1488 1861 1489
+Connection ~ 1861 1488
+Connection ~ 2147 1488
+Wire Wire Line
+	2147 1488 2145 1488
+Connection ~ 1861 1489
+Wire Wire Line
+	2151 1488 2148 1488
+Connection ~ 2151 1488
+Connection ~ 2145 1488
+Wire Wire Line
+	2145 1488 1861 1488
+Connection ~ 2148 1488
+Wire Notes Line
+	2910 715  2910 2084
+Wire Notes Line
+	2910 2084 1026 2084
+Wire Notes Line
+	1026 2084 1026 715 
+Wire Notes Line
+	1026 715  2910 715 
+Text Notes 1142 1971 0    50   ~ 0
+Reset Circuit
+Wire Wire Line
+	10258 1270 10358 1270
+Connection ~ 10358 1270
+Wire Wire Line
+	10358 1270 10458 1270
+$Comp
+L power:+5V #PWR?
+U 1 1 5D71D8E5
+P 10358 1128
+F 0 "#PWR?" H 10358 978 50  0001 C CNN
+F 1 "+5V" H 10372 1300 50  0000 C CNN
+F 2 "" H 10358 1128 50  0001 C CNN
+F 3 "" H 10358 1128 50  0001 C CNN
+	1    10358 1128
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10358 1270 10358 1128
+Connection ~ 10358 1128
+Wire Wire Line
+	10358 1128 10358 1127
+Wire Wire Line
+	10358 1127 10358 1125
+Connection ~ 10358 1127
+Connection ~ 10358 1125
+NoConn ~ 9758 2170
+$Comp
+L Device:Crystal_GND24 Y?
+U 1 1 5D71E660
+P 1947 3276
+F 0 "Y?" V 1901 3517 50  0000 L CNN
+F 1 "16MHz" V 1992 3517 50  0000 L CNN
+F 2 "" H 1947 3276 50  0001 C CNN
+F 3 "~" H 1947 3276 50  0001 C CNN
+	1    1947 3276
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D71EB93
+P 1631 3276
+F 0 "#PWR?" H 1631 3026 50  0001 C CNN
+F 1 "GND" H 1635 3105 50  0000 C CNN
+F 2 "" H 1631 3276 50  0001 C CNN
+F 3 "" H 1631 3276 50  0001 C CNN
+	1    1631 3276
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1631 3276 1747 3276
+Connection ~ 1747 3276
+Wire Wire Line
+	1747 3276 1748 3276
+Connection ~ 1748 3276
+Wire Wire Line
+	1748 3276 1749 3276
+Connection ~ 1749 3276
+Text GLabel 2424 3125 2    50   Input ~ 0
+XTAL1
+Wire Wire Line
+	2424 3125 1947 3125
+Wire Wire Line
+	1947 3125 1947 3126
+Connection ~ 1947 3126
+$Comp
+L Device:C_Small C?
+U 1 1 5D7200F1
+P 1302 3125
+F 0 "C?" V 1073 3125 50  0000 C CNN
+F 1 "22pF" V 1164 3125 50  0000 C CNN
+F 2 "" H 1302 3125 50  0001 C CNN
+F 3 "~" H 1302 3125 50  0001 C CNN
+	1    1302 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D726491
+P 1303 3426
+F 0 "C?" V 1074 3426 50  0000 C CNN
+F 1 "22pF" V 1165 3426 50  0000 C CNN
+F 2 "" H 1303 3426 50  0001 C CNN
+F 3 "~" H 1303 3426 50  0001 C CNN
+	1    1303 3426
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1947 3125 1402 3125
+Connection ~ 1947 3125
+Wire Wire Line
+	1403 3426 1947 3426
+Text GLabel 2423 3426 2    50   Input ~ 0
+XTAL2
+Wire Wire Line
+	2423 3426 1947 3426
+Wire Wire Line
+	1947 3426 1947 3425
+Connection ~ 1947 3426
+Connection ~ 1947 3425
+Wire Wire Line
+	1202 3125 1202 3426
+Wire Wire Line
+	1202 3426 1203 3426
+Connection ~ 1204 3426
+Connection ~ 1203 3426
+Wire Wire Line
+	1203 3426 1204 3426
+Wire Wire Line
+	1202 3426 1202 3753
+Wire Wire Line
+	1202 3753 2147 3753
+Wire Wire Line
+	2147 3753 2147 3276
+Connection ~ 1202 3426
+Wire Notes Line
+	738  2595 738  4210
+Wire Notes Line
+	738  4210 3020 4210
+Wire Notes Line
+	3020 4210 3020 2597
+Wire Notes Line
+	3020 2597 737  2597
+Text Notes 885  4073 0    50   ~ 0
+Crystal
+Wire Wire Line
+	1576 5120 1826 5120
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 5D728655
+P 2026 5120
+F 0 "Q?" H 2231 5166 50  0000 L CNN
+F 1 "2N7002" H 2231 5075 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2226 5045 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 2026 5120 50  0001 L CNN
+	1    2026 5120
+	1    0    0    -1  
+$EndComp
+Text GLabel 2126 4920 1    60   Input ~ 0
+LEDGND
+$Comp
+L power:GND #PWR?
+U 1 1 5D728657
+P 2126 5320
+F 0 "#PWR?" H 2126 5070 50  0001 C CNN
+F 1 "GND" H 2126 5170 50  0000 C CNN
+F 2 "" H 2126 5320 50  0001 C CNN
+F 3 "" H 2126 5320 50  0001 C CNN
+	1    2126 5320
+	1    0    0    -1  
+$EndComp
+Text GLabel 1376 5120 0    50   Input ~ 0
+MOSFET
+$Comp
+L Device:R_Small R?
+U 1 1 5D728656
+P 1476 5120
+F 0 "R?" H 1506 5140 50  0000 L CNN
+F 1 "1k" H 1506 5080 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 1476 5120 50  0001 C CNN
+F 3 "" H 1476 5120 50  0001 C CNN
+	1    1476 5120
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	3030 4472 713  4472
+Wire Notes Line
+	713  4472 713  5904
+Wire Notes Line
+	713  5904 3030 5904
+Wire Notes Line
+	3030 5904 3030 4473
+Text Notes 843  5780 0    50   ~ 0
+MOSFET
+Text GLabel 7482 6938 0    50   Input ~ 0
+MOSFET
+Text GLabel 9758 2870 0    50   Input ~ 0
+UCAP
+Wire Bus Line
+	3370 913  5317 913 
+Wire Bus Line
+	5317 913  5317 2294
+Wire Bus Line
+	5317 2294 3370 2294
+Wire Bus Line
+	3370 2294 3370 913 
+Text GLabel 3803 1481 0    50   Input ~ 0
+UCAP
+Text Notes 3492 2148 0    50   ~ 0
+USB Pads Internal Regulator Output \nSupply Voltage\n
+$Comp
+L Device:C_Small C?
+U 1 1 5D72E560
+P 4235 1481
+F 0 "C?" V 4006 1481 50  0000 C CNN
+F 1 "1uF" V 4097 1481 50  0000 C CNN
+F 2 "" H 4235 1481 50  0001 C CNN
+F 3 "~" H 4235 1481 50  0001 C CNN
+	1    4235 1481
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72E6B0
+P 4590 1481
+F 0 "#PWR?" H 4590 1231 50  0001 C CNN
+F 1 "GND" H 4594 1310 50  0000 C CNN
+F 2 "" H 4590 1481 50  0001 C CNN
+F 3 "" H 4590 1481 50  0001 C CNN
+	1    4590 1481
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4333 1480 4334 1480
+Connection ~ 4335 1480
+Connection ~ 4334 1480
+Wire Wire Line
+	4334 1480 4335 1480
+Connection ~ 4333 1480
+Wire Wire Line
+	4135 1481 3803 1481
+Connection ~ 4335 1481
+Connection ~ 4590 1481
+Wire Wire Line
+	4590 1481 4590 1483
+Connection ~ 4590 1483
+Wire Wire Line
+	4590 1481 4591 1481
+Wire Wire Line
+	4335 1481 4588 1481
+Connection ~ 4588 1481
+Wire Wire Line
+	4588 1481 4589 1481
+Connection ~ 4591 1481
+Connection ~ 4589 1481
+Wire Wire Line
+	4589 1481 4590 1481
+Wire Wire Line
+	4716 3643 4716 3543
+Wire Wire Line
+	3966 3643 4216 3643
+Wire Wire Line
+	3966 3643 3966 3543
+Wire Wire Line
+	4716 3243 4716 3343
+$Comp
+L Device:C_Small C?
+U 1 1 5D72EE98
+P 4466 3443
+F 0 "C?" H 4476 3513 50  0000 L CNN
+F 1 "0.1uF" H 4476 3363 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4466 3443 50  0001 C CNN
+F 3 "" H 4466 3443 50  0001 C CNN
+	1    4466 3443
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4216 3243 4216 3343
+Wire Wire Line
+	4216 3543 4216 3643
+Wire Wire Line
+	4466 3543 4466 3643
+Wire Wire Line
+	4216 3243 4466 3243
+Wire Wire Line
+	4466 3643 4466 3743
+Wire Wire Line
+	4466 3643 4716 3643
+Wire Wire Line
+	3966 3243 4216 3243
+Connection ~ 4466 3243
+Wire Wire Line
+	4466 3243 4716 3243
+Wire Wire Line
+	4466 3243 4466 3343
+Connection ~ 4466 3643
+Wire Wire Line
+	4466 3143 4466 3243
+Wire Wire Line
+	4216 3643 4466 3643
+$Comp
+L Device:C_Small C?
+U 1 1 5D72EE99
+P 4216 3443
+F 0 "C?" H 4226 3513 50  0000 L CNN
+F 1 "0.1uF" H 4226 3363 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4216 3443 50  0001 C CNN
+F 3 "" H 4216 3443 50  0001 C CNN
+	1    4216 3443
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D72EE9A
+P 4716 3443
+F 0 "C?" H 4726 3513 50  0000 L CNN
+F 1 "0.1uF" H 4726 3363 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4716 3443 50  0001 C CNN
+F 3 "" H 4716 3443 50  0001 C CNN
+	1    4716 3443
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3966 3343 3966 3243
+$Comp
+L power:+5V #PWR?
+U 1 1 5D72EE9B
+P 4466 3143
+F 0 "#PWR?" H 4466 2993 50  0001 C CNN
+F 1 "+5V" H 4466 3283 50  0000 C CNN
+F 2 "" H 4466 3143 50  0001 C CNN
+F 3 "" H 4466 3143 50  0001 C CNN
+	1    4466 3143
+	1    0    0    -1  
+$EndComp
+Connection ~ 4216 3643
+Connection ~ 4216 3243
+$Comp
+L power:GND #PWR?
+U 1 1 5D72EE9C
+P 4466 3743
+F 0 "#PWR?" H 4466 3493 50  0001 C CNN
+F 1 "GND" H 4466 3593 50  0000 C CNN
+F 2 "" H 4466 3743 50  0001 C CNN
+F 3 "" H 4466 3743 50  0001 C CNN
+	1    4466 3743
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D72EE9D
+P 3966 3443
+F 0 "C?" H 3976 3513 50  0000 L CNN
+F 1 "10uF" H 3976 3363 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3966 3443 50  0001 C CNN
+F 3 "" H 3966 3443 50  0001 C CNN
+	1    3966 3443
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3470 2742 5422 2742
+Wire Notes Line
+	5422 2742 5422 4319
+Wire Notes Line
+	5422 4319 3329 4319
+Wire Notes Line
+	3329 4319 3329 2738
+Wire Notes Line
+	3329 2738 3572 2738
+Text Notes 3447 4203 0    50   ~ 0
+Decoupling Capacitors
+Wire Wire Line
+	4615 5406 4615 5331
+Wire Wire Line
+	4765 4906 4765 5806
+Wire Wire Line
+	6790 5331 6890 5331
+Connection ~ 4715 6006
+Wire Wire Line
+	4490 5506 4265 5506
+Wire Wire Line
+	4265 4906 4765 4906
+Wire Wire Line
+	5690 4906 5490 4906
+Wire Wire Line
+	4265 5406 4615 5406
+Wire Wire Line
+	4490 5306 4490 5431
+Wire Wire Line
+	4265 5306 4490 5306
+Wire Wire Line
+	5065 6081 5215 6081
+Wire Wire Line
+	4615 5206 4265 5206
+Wire Wire Line
+	4615 5331 4615 5206
+Wire Wire Line
+	5140 4906 5290 4906
+Wire Wire Line
+	4715 6006 4265 6006
+Wire Wire Line
+	4715 4806 4265 4806
+Wire Wire Line
+	5015 5706 5015 6331
+Connection ~ 4615 5331
+Wire Wire Line
+	4765 4906 5140 4906
+Wire Wire Line
+	6590 5431 6890 5431
+$Comp
+L Type-C:HRO-TYPE-C-31-M-12 USB?
+U 1 1 5D74074B
+P 4165 5356
+F 0 "USB?" H 3965 6006 60  0000 C CNN
+F 1 "HRO-TYPE-C-31-M-12" V 3765 5306 60  0000 C CNN
+F 2 "Type-C:HRO-TYPE-C-31-M-12-Assembly" H 4165 5356 60  0001 C CNN
+F 3 "" H 4165 5356 60  0001 C CNN
+	1    4165 5356
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D74074C
+P 4715 6006
+F 0 "#PWR?" H 4715 5756 50  0001 C CNN
+F 1 "GND" H 4715 5856 50  0000 C CNN
+F 2 "" H 4715 6006 50  0001 C CNN
+F 3 "" H 4715 6006 50  0001 C CNN
+	1    4715 6006
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D74074D
+P 5315 6331
+F 0 "R?" H 5345 6351 50  0000 L CNN
+F 1 "5.1k" H 5345 6291 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5315 6331 50  0001 C CNN
+F 3 "" H 5315 6331 50  0001 C CNN
+	1    5315 6331
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5565 6331 5415 6331
+Wire Wire Line
+	5015 6331 5215 6331
+Wire Wire Line
+	4265 5906 4715 5906
+Connection ~ 4765 4906
+$Comp
+L power:+5V #PWR?
+U 1 1 5D74074E
+P 5690 4906
+F 0 "#PWR?" H 5690 4756 50  0001 C CNN
+F 1 "+5V" H 5690 5046 50  0000 C CNN
+F 2 "" H 5690 4906 50  0001 C CNN
+F 3 "" H 5690 4906 50  0001 C CNN
+	1    5690 4906
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4715 4806 4715 5906
+Wire Wire Line
+	4765 5806 4265 5806
+Connection ~ 5140 4906
+$Comp
+L power:GND #PWR?
+U 1 1 5D740750
+P 5565 6331
+F 0 "#PWR?" H 5565 6081 50  0001 C CNN
+F 1 "GND" H 5565 6181 50  0000 C CNN
+F 2 "" H 5565 6331 50  0001 C CNN
+F 3 "" H 5565 6331 50  0001 C CNN
+	1    5565 6331
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D740751
+P 7402 1714
+F 0 "#PWR?" H 7402 1564 50  0001 C CNN
+F 1 "VCC" H 7419 1887 50  0000 C CNN
+F 2 "" H 7402 1714 50  0001 C CNN
+F 3 "" H 7402 1714 50  0001 C CNN
+	1    7402 1714
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5D740752
+P 6690 5331
+F 0 "R?" H 6720 5351 50  0000 L CNN
+F 1 "22" H 6720 5291 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6690 5331 50  0001 C CNN
+F 3 "" H 6690 5331 50  0001 C CNN
+	1    6690 5331
+	0    1    1    0   
+$EndComp
+Text GLabel 6890 5431 2    60   Input ~ 0
+D+
+Text GLabel 6890 5331 2    60   Input ~ 0
+D-
+Wire Wire Line
+	4265 5706 5015 5706
+$Comp
+L Device:R_Small R?
+U 1 1 5D740753
+P 6490 5431
+F 0 "R?" H 6520 5451 50  0000 L CNN
+F 1 "22" H 6520 5391 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 6490 5431 50  0001 C CNN
+F 3 "" H 6490 5431 50  0001 C CNN
+	1    6490 5431
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 5D740754
+P 5390 4906
+F 0 "F?" V 5315 4906 50  0000 C CNN
+F 1 "500mA" V 5465 4906 50  0000 C CNN
+F 2 "Fuse_Holders_and_Fuses:Fuse_SMD1206_Reflow" H 5440 4706 50  0001 L CNN
+F 3 "" H 5390 4906 50  0001 C CNN
+	1    5390 4906
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5D740755
+P 5140 4906
+F 0 "#PWR?" H 5140 4756 50  0001 C CNN
+F 1 "VCC" H 5140 5056 50  0000 C CNN
+F 2 "" H 5140 4906 50  0001 C CNN
+F 3 "" H 5140 4906 50  0001 C CNN
+	1    5140 4906
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5415 6081 5565 6081
+Connection ~ 5565 6331
+Wire Wire Line
+	5065 5106 5065 6081
+Wire Wire Line
+	4490 5431 4490 5506
+Wire Wire Line
+	5565 6081 5565 6331
+$Comp
+L Device:R_Small R?
+U 1 1 5D740756
+P 5315 6081
+F 0 "R?" H 5345 6101 50  0000 L CNN
+F 1 "5.1k" H 5345 6041 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 5315 6081 50  0001 C CNN
+F 3 "" H 5315 6081 50  0001 C CNN
+	1    5315 6081
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4265 5106 5065 5106
+Connection ~ 4490 5431
+Connection ~ 4715 5906
+Wire Wire Line
+	4715 5906 4715 6006
+Wire Wire Line
+	7402 1714 7302 1714
+$Comp
+L Power_Protection:PRTR5V0U2X D?
+U 1 1 5D747837
+P 6802 1714
+F 0 "D?" V 6756 2255 50  0000 L CNN
+F 1 "PRTR5V0U2X" V 6847 2255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 6862 1714 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/PRTR5V0U2X.pdf" H 6862 1714 50  0001 C CNN
+	1    6802 1714
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D74D3EC
+P 6302 1714
+F 0 "#PWR?" H 6302 1464 50  0001 C CNN
+F 1 "GND" H 6306 1543 50  0000 C CNN
+F 2 "" H 6302 1714 50  0001 C CNN
+F 3 "" H 6302 1714 50  0001 C CNN
+	1    6302 1714
+	1    0    0    -1  
+$EndComp
+Text GLabel 6802 2214 3    50   Input ~ 0
+D+ESD
+Text GLabel 6802 1214 1    50   Input ~ 0
+D-ESD
+Wire Wire Line
+	4615 5331 6590 5331
+Wire Wire Line
+	4490 5431 6390 5431
+Text GLabel 5478 5431 3    50   Input ~ 0
+D+ESD
+Text GLabel 5697 5331 1    50   Input ~ 0
+D-ESD
+Wire Bus Line
+	5866 838  5866 2897
+Wire Bus Line
+	5866 2897 8128 2897
+Wire Bus Line
+	8128 2897 8128 838 
+Wire Bus Line
+	5866 838  8128 838 
+Text Notes 6002 2755 0    50   ~ 0
+Power Protection
+$Sheet
+S 6583 3731 1311 670 
+U 5D752EB9
+F0 "Matrix" 50
+F1 "Matrix.sch" 50
+F2 "COL1" I R 7894 4006 50 
+F3 "COL0" I R 7894 4134 50 
+F4 "ROW1" I L 6583 4136 50 
+F5 "ROW0" I L 6583 4020 50 
+$EndSheet
+$Sheet
+S 8272 4954 1282 742 
+U 5D752EE2
+F0 "RGB_Underglow" 50
+F1 "RGB_Matrix.sch" 50
+F2 "RGBLED_3V3" I R 9554 5135 50 
+$EndSheet
+$EndSCHEMATC
